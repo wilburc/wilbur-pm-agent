@@ -27,7 +27,12 @@ A good goal can be verified, like "finish ticket X", not "make progress on Y". I
 ## What to flag
 - Timeline: you suspect the agreed timeline is off track. Say why.
 - Divergence: work or discussion that departs from a source-of-truth document.
-- Decisions: any decision being made, however small.
+- Decisions: any decision being made, however small, and every open (undecided) decision in the project, whoever owns it, not only ones waiting on Wilbur. Write each open decision as a short block so Wilbur can act on it fast:
+  - Problem: one sentence.
+  - Options: each with a one-line tradeoff. Add your recommendation if you have one, marked as opinion.
+  - Urgency: what it blocks and by when (a date or milestone, tied to the timeline if known).
+  - Who decides: a name and why them (owner or approver per the doc, ticket, or channel), and who to chase if not Wilbur. Link the Slack message or doc section where it was raised.
+  - If the owner is unknown, mark it "Unsure" and ask in "Questions for you".
 - Scope creep: work or requests beyond what the documents describe.
 - Slow PRs: a PR that sits open with no comments and no other activity. Judge each PR on its own, not by a fixed number of days. Say how long it has been quiet.
 - Risks: anything that could threaten the timeline or the plan.
