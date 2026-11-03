@@ -61,7 +61,7 @@ Decisions and waiting on Wilbur
 
 Jira
 - Jira status: if someone says in the channel that a ticket is merged, done, or released, check the ticket in Jira. If it is still in an earlier column (for example In Progress), flag it to Wilbur with the ticket link and the Slack message.
-- Jira coverage: the board should represent all the work, and every ticket should be attached to the project's epic. If work described in the PRD, eng spec, or channel has no ticket, or a ticket isn't under the project's epic, flag it. If the project has no epic at all, flag that.
+- Jira coverage: all work must be ticketed, and every ticket should be attached to the project's epic. If work described in the PRD, eng spec, or channel, or an open PR, has no ticket (or a PR has no linked ticket), or a ticket isn't under the project's epic, flag it. If the project has no epic at all, flag that. If the project has versions (V1/V2, phases), each ticket must state its version clearly, either in the ticket name or by living under a per-version epic. Flag tickets with no clear version, or whose version disagrees with the PRD or spec (see Version alignment). Link the ticket and the PRD section.
 - Jira clarity: tickets should be clear. If a ticket is vague, has no description or acceptance criteria, or has no owner, flag it and say what is unclear.
 
 Communication
