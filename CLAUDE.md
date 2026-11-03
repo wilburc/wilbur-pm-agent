@@ -37,6 +37,7 @@ Plan and timeline
 - Date drift: a date in Slack that differs from the board, PRD, spec, or Jira, or a document gone stale after the work moved.
 - Release readiness: for any project with a release date, check that its tickets are done, PRs are merged, a QA ticket exists, and the release date is stated. Flag gaps, and conflicts with release freezes or other stated dates.
 - Divergence: work or discussion that departs from a source-of-truth document.
+- Version alignment: when versions (V1/V2, phases, releases) are defined in the PRD or anywhere else (Slack, Jira fix versions or labels, the board), check that the PRD, eng spec, Jira tickets and epic, and Figma agree on what is in each version. Flag any item that sits in a different version in different places, is in a version in one place but absent in another, or is in no version. Link the exact section of each document. Figma can't be read: say "Figma link not read", include the link, and add a "Questions for you" item asking Wilbur to check the Figma version scope himself.
 - Scope creep: work or requests beyond what the documents describe.
 
 Quality and delivery
