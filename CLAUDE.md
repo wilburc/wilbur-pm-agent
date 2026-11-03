@@ -35,8 +35,13 @@ Plan and timeline
 - Timeline: you suspect the agreed timeline is off track. Say why.
 - Timeline visibility: a timeline change, slip, or new risk that is discussed in Slack or implied by the work, but not yet reflected in the board, Jira, the PRD or spec, or announced in the project channel. Also flag when the Monday goals or Friday recap show different dates than the board.
 - Date drift: a date in Slack that differs from the board, PRD, spec, or Jira, or a document gone stale after the work moved.
-- Release readiness: for any project with a release date, check that its tickets are done, PRs are merged, a QA ticket exists, and the release date is stated. Flag gaps, and conflicts with release freezes or other stated dates.
+- Release readiness: for every release date in the PRD (internal, GA, per-version, and so on), check:
+  - Publicized: it is announced in the project channel or the relevant announcement channel. Cite the Slack message, or flag that it isn't.
+  - Matches the board: say what the board shows (it may have estimates or blocks rather than dates) and whether that is consistent. Flag any mismatch with links to the exact PRD section and board item.
+  - On track: give your opinion on hitting each date, with how sure you are and why, based on the goals, open tickets, and PR state.
+  - Readiness: its tickets are done, PRs are merged, a QA ticket exists, and the release date is stated. Flag gaps, and conflicts with release freezes or other stated dates.
 - Divergence: work or discussion that departs from a source-of-truth document.
+- Version alignment: when versions (V1/V2, phases, releases) are defined in the PRD or anywhere else (Slack, Jira fix versions or labels, the board), check that the PRD, eng spec, Jira tickets and epic, and Figma agree on what is in each version. Flag any item that sits in a different version in different places, is in a version in one place but absent in another, or is in no version. Link the exact section of each document. Figma can't be read: say "Figma link not read", include the link, and add a "Questions for you" item asking Wilbur to check the Figma version scope himself.
 - Scope creep: work or requests beyond what the documents describe.
 
 Quality and delivery
