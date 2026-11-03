@@ -10,7 +10,7 @@ description: Build and send Wilbur's end-of-day digest of project channels. Use 
 3. Collect items in these groups: Timeline, Divergence, Decisions, Scope creep, Slow PRs, Risks. Drop anything already reported and unchanged.
 4. Anything that is blocking the team should already have gone out as an urgent ping. If you find one now, use `urgent-ping` first.
 5. Write the digest: one section per project, items as short bullets, each with a link. Mark uncertain items "Unsure" with the facts needed to decide.
-6. DM it to Wilbur. Nobody else.
+6. DM it to Wilbur. Nobody else. Do this on weekdays at 5:00 pm Eastern. If there is nothing to report, send nothing.
 
 Item format:
 - **<type>**: <one line: what and why>. [link]
