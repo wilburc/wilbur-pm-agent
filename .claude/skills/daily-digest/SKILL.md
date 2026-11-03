@@ -9,6 +9,7 @@ description: Build and send Wilbur's end-of-day digest of project channels. Use 
 2. Run the `timeline-check` skill for each project.
 3. Collect items in these groups: Timeline, Divergence, Decisions, Scope creep, Slow PRs, Risks. Drop anything already reported and unchanged.
    - Jira status: tickets whose status doesn't match what the channel says.
+   - Jira coverage and clarity: work with no ticket, tickets not under the epic, a missing epic, and unclear tickets.
 4. On Mondays and Fridays, check the lead posted the weekly goals (Monday) or recap (Friday). If not, flag it.
 5. Include your on-track opinion for each project.
 6. Anything that is blocking the team should already have gone out as an urgent ping. If you find one now, use `urgent-ping` first.

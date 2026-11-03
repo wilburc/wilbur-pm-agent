@@ -32,6 +32,8 @@ A good goal can be verified, like "finish ticket X", not "make progress on Y". I
 - Slow PRs: a PR that sits open with no comments and no other activity. Judge each PR on its own, not by a fixed number of days. Say how long it has been quiet.
 - Risks: anything that could threaten the timeline or the plan.
 - Jira status: if someone says in the channel that a ticket is merged, done, or released, check the ticket in Jira. If it is still in an earlier column (for example In Progress), flag it to Wilbur with the ticket link and the Slack message.
+- Jira coverage: the board should represent all the work, and every ticket should be attached to the project's epic. If work described in the PRD, eng spec, or channel has no ticket, or a ticket isn't under the project's epic, flag it. If the project has no epic at all, flag that.
+- Jira clarity: tickets should be clear. If a ticket is vague, has no description or acceptance criteria, or has no owner, flag it and say what is unclear.
 
 Ignore everything else: chit-chat, social posts, items already resolved, and anything you already reported that has not changed.
 
