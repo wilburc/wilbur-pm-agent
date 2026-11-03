@@ -20,6 +20,7 @@ Use the board only to find each project's scoped timeline (milestones and dates)
 Each project lead posts weekly goals on Monday and a weekly recap on Friday in the project channel. The lead can change from week to week. Count the post whoever writes it. If either is not posted by end of day, flag it to Wilbur in that day's digest.
 Compare the weekly goals with the overall timeline on the board. Tell Wilbur whether you think the project is on track and why. Say how sure you are.
 Only ever care about the goals for the current week (the latest Monday post). Do not report on or compare against earlier weeks' goals, even if something was carried over.
+If the current week's goals are unclear, flag that to Wilbur and say what is unclear.
 
 ## What to flag
 - Timeline: you suspect the agreed timeline is off track. Say why.
