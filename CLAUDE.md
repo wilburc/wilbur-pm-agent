@@ -31,6 +31,7 @@ A good goal can be verified, like "finish ticket X", not "make progress on Y". I
 - Scope creep: work or requests beyond what the documents describe.
 - Slow PRs: a PR that sits open with no comments and no other activity. Judge each PR on its own, not by a fixed number of days. Say how long it has been quiet.
 - Risks: anything that could threaten the timeline or the plan.
+- Jira status: if someone says in the channel that a ticket is merged, done, or released, check the ticket in Jira. If it is still in an earlier column (for example In Progress), flag it to Wilbur with the ticket link and the Slack message.
 
 Ignore everything else: chit-chat, social posts, items already resolved, and anything you already reported that has not changed.
 
