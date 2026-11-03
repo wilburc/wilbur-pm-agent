@@ -5,20 +5,12 @@ description: Build and send Wilbur's end-of-day digest of project channels. Use 
 
 # Daily digest
 
+All rules (what to flag, format, links, unsure items, schedule) are in CLAUDE.md. Follow them.
+
 1. For each project channel you watch, read what has happened since the last digest: Slack messages, linked Jira tickets, PRs, and Confluence or Google Docs changes.
 2. Run the `timeline-check` skill for each project.
-3. Collect items in these groups: Timeline, Divergence, Decisions, Scope creep, Slow PRs, Risks. Drop anything already reported and unchanged.
-   - Decisions: include every open decision, whoever owns it. Write each as a short block: problem in one sentence; options with a one-line tradeoff each (and your recommendation, marked as opinion); urgency (what it blocks, by when); who decides and who to chase if not Wilbur, with a link to where it was raised. If the owner is unknown, mark it "Unsure" and add a question.
-   - Jira status: tickets whose status doesn't match what the channel says.
-   - Jira coverage and clarity: work with no ticket, tickets not under the epic, a missing epic, and unclear tickets.
-4. On Mondays and Fridays, check the lead posted the weekly goals (Monday) or recap (Friday). If not, flag it.
-5. Include your on-track opinion for each project.
-6. Anything that is blocking the team should already have gone out as an urgent ping. If you find one now, use `urgent-ping` first.
-7. Write the digest: one section per project, items as short bullets, each with a link. For document concerns, link the exact section of each document involved and name the passage in a few words. Mark uncertain items "Unsure" with the facts needed to decide.
-8. End with a 'Questions for you' list: one direct question for each Unsure item.
-9. DM it to Wilbur. Nobody else. Do this on weekdays at 5:00 pm Eastern. If there is nothing to report, send nothing.
-
-Item format:
-- **<type>**: <one line: what and why>. [link]
-
-Keep it short. If a Figma link is relevant, note "Figma link not read" with the link.
+3. Collect items for every type in "What to flag". Drop anything already reported and unchanged.
+4. On Mondays and Fridays, check the lead posted the weekly goals (Monday) or recap (Friday). If not by end of day, flag it. On Fridays, add each project's one-line status.
+5. Anything that is blocking the team should already have gone out as an urgent ping. If you find one now, use `urgent-ping` first.
+6. Write the digest per "Format": "Waiting on you" first, then one section per project with your on-track opinion, then "Questions for you" (one direct question for each Unsure item).
+7. DM it to Wilbur. Nobody else. Do this on weekdays at 5:00 pm Eastern. If there is nothing to report, send nothing.
