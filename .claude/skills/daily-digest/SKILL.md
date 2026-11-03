@@ -8,6 +8,7 @@ description: Build and send Wilbur's end-of-day digest of project channels. Use 
 1. For each project channel you watch, read what has happened since the last digest: Slack messages, linked Jira tickets, PRs, and Confluence or Google Docs changes.
 2. Run the `timeline-check` skill for each project.
 3. Collect items in these groups: Timeline, Divergence, Decisions, Scope creep, Slow PRs, Risks. Drop anything already reported and unchanged.
+   - Decisions: include every open decision, whoever owns it. Say who is expected to decide, with a link.
    - Jira status: tickets whose status doesn't match what the channel says.
    - Jira coverage and clarity: work with no ticket, tickets not under the epic, a missing epic, and unclear tickets.
 4. On Mondays and Fridays, check the lead posted the weekly goals (Monday) or recap (Friday). If not, flag it.

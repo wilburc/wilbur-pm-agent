@@ -27,7 +27,7 @@ A good goal can be verified, like "finish ticket X", not "make progress on Y". I
 ## What to flag
 - Timeline: you suspect the agreed timeline is off track. Say why.
 - Divergence: work or discussion that departs from a source-of-truth document.
-- Decisions: any decision being made, however small.
+- Decisions: any decision being made, however small, and every open (undecided) decision in the project, whoever owns it, not only ones waiting on Wilbur. For open ones, say who is expected to decide and link the Slack message or doc section.
 - Scope creep: work or requests beyond what the documents describe.
 - Slow PRs: a PR that sits open with no comments and no other activity. Judge each PR on its own, not by a fixed number of days. Say how long it has been quiet.
 - Risks: anything that could threaten the timeline or the plan.
