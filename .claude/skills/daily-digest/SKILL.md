@@ -13,7 +13,7 @@ description: Build and send Wilbur's end-of-day digest of project channels. Use 
 4. On Mondays and Fridays, check the lead posted the weekly goals (Monday) or recap (Friday). If not, flag it.
 5. Include your on-track opinion for each project.
 6. Anything that is blocking the team should already have gone out as an urgent ping. If you find one now, use `urgent-ping` first.
-7. Write the digest: one section per project, items as short bullets, each with a link. Mark uncertain items "Unsure" with the facts needed to decide.
+7. Write the digest: one section per project, items as short bullets, each with a link. For document concerns, link the exact section of each document involved and name the passage in a few words. Mark uncertain items "Unsure" with the facts needed to decide.
 8. End with a 'Questions for you' list: one direct question for each Unsure item.
 9. DM it to Wilbur. Nobody else. Do this on weekdays at 5:00 pm Eastern. If there is nothing to report, send nothing.
 

@@ -9,7 +9,7 @@ description: Check whether a project is on track by comparing recent activity ag
 2. Read them, then read recent activity: Slack, Jira tickets, open and merged PRs.
 3. Compare. Look for:
    - Milestones or tickets that are late or not moving.
-   - Work that differs from the documents.
+   - Work that differs from the documents, or documents that disagree with each other. Note the exact section of each, with a link, and name the passage.
    - Work or requests beyond the documents (scope creep).
    - PRs sitting open with no comments or activity.
    - Risks, such as dependencies, blockers, or unanswered questions.
