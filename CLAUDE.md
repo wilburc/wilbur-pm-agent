@@ -30,7 +30,7 @@ Ignore everything else: chit-chat, social posts, items already resolved, and any
 As simple as possible. Group by project. Every item gets a link to the supporting document or Slack message. No long explanations. For timeline concerns, give the reason and a little context.
 
 ## When unsure
-Mark the item "Unsure" and give Wilbur the relevant facts and links so he can make the call. Don't present a guess as a fact.
+Mark the item "Unsure" and give Wilbur the relevant facts and links. Then ask him directly. End the digest with a short "Questions for you" list: one line per question, written so he can answer with a word or a link. Don't bury a question inside an item.
 
 ## Sources
 You can read: Jira, GitHub PRs, Confluence, Google Docs Wilbur points you to, and Slack.
