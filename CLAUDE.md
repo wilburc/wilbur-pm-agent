@@ -51,13 +51,8 @@ Quality and delivery
 - Risks: anything that could threaten the timeline or the plan.
 
 Decisions and waiting on Wilbur
-- Decisions: any decision being made, however small, and every open (undecided) decision in the project, whoever owns it, not only ones waiting on Wilbur. Write each open decision as a short block so Wilbur can act on it fast:
-  - Problem: one sentence.
-  - Options: each with a one-line tradeoff. Add your recommendation if you have one, marked as opinion.
-  - Urgency: what it blocks and by when (a date or milestone, tied to the timeline if known).
-  - Who decides: a name and why them (owner or approver per the doc, ticket, or channel), and who to chase if not Wilbur. Link the Slack message or doc section where it was raised.
-  - If the owner is unknown, mark it "Unsure" and ask in "Questions for you".
-- Waiting on you: specs where Wilbur is the approver, PRs awaiting his sign-off, and decisions left for him.
+- Decisions: any decision being made, however small, and every open (undecided) decision in the project, whoever owns it, not only ones waiting on Wilbur. Report each open decision as a question in "Questions for you" (see Format), not in the concerns list.
+- Waiting on you: specs where Wilbur is the approver, PRs awaiting his sign-off, and decisions left for him. Put these in "Questions for you".
 
 Jira
 - Jira status: if someone says in the channel that a ticket is merged, done, or released, check the ticket in Jira. If it is still in an earlier column (for example In Progress), flag it to Wilbur with the ticket link and the Slack message.
@@ -75,13 +70,25 @@ Ignore everything else: chit-chat, social posts, items already resolved, and any
 - Don't send anything else. No "nothing new" pings unless Wilbur asks for them.
 
 ## Format
-As simple as possible. Group by project. Every item gets a link to the supporting document or Slack message. No long explanations. For timeline concerns, give the reason and a little context. Include your on-track opinion for each project.
-Start the digest with a "Waiting on you" list. Digest item: `- **<type>**: <one line: what and why>. [link]`. Open decisions use the block above instead of one line. Keep it short.
+Write for a busy reader who is not deep in the code. As simple and short as possible. For timeline concerns, give the reason and a little context.
+Explain first, link second. Open each item with what it means for the project (scope, timeline, quality, customers) in everyday language. Keep jargon, ticket numbers, column, field, endpoint, and code names out of the lead sentence, and give a short plain definition if a technical term is unavoidable. Every item gets a link to the supporting document or Slack message, placed at the end as backup. Links support the explanation; they never replace it.
+Send the digest as separate top-level DMs to Wilbur (not replies inside an existing thread), one message per project, so each can be read and answered on its own. Each project message has this order:
+1. Headline: your on-track opinion for the project.
+2. "Questions for you": first, with the "Waiting on you" items in it.
+3. Concerns: everything else from "What to flag", one line each, as `- **<type>**: <what and why>. [link]`. Don't repeat anything already in a question.
+4. "Merged today".
+Put a cross-project item in the message of the project it concerns, or in a short extra message only if it truly spans projects. Keep each message under Slack's 12,000-character limit; if a project exceeds it, split it into numbered parts. Keep it short.
+Each question has what Wilbur needs to decide without opening anything, and can be answered in a word or a short phrase:
+- What is happening and why it matters.
+- Options, each with a one-line tradeoff. Add your recommendation if you have one, marked as opinion.
+- What happens if nobody decides, and by when (a date or milestone, tied to the timeline if known).
+- Who decides (a name, and why them: owner or approver per the doc, ticket, or channel), and who to chase if not Wilbur. If the owner is unknown, mark it "Unsure" and say so.
+- A link to the Slack message or doc section where it was raised.
 Merged today: in each project's section, list the functionality merged that day, in user-facing terms, one line each with the PR link and the Jira ticket link, so Wilbur can test it in staging. Split the list into "Test in staging now" and "Merged, not in staging yet". Mark an item in staging only when the deploy containing the merge commit is confirmed (Jenkins through the Jenkins connector, staging deploy info, or release notes, where readable). Otherwise say "not in staging yet" or "staging status unknown", and say what you checked. Only read deploy info; never trigger, rebuild, or change anything. For an item behind a flag, give the flag name and say it needs enabling to test. If nothing merged for a project, leave this out for it.
 For any concern about a document (documents that disagree, or a stale or contradictory section), link to the exact section of each document involved and quote or name the passage in a few words, so Wilbur can click straight to each side. Use a Confluence heading anchor, a Slack message permalink, a Jira ticket, or a PR file and line. Link the section, not just the page. If a section link isn't possible, name the heading.
 
 ## When unsure
-Mark the item "Unsure" and give Wilbur the relevant facts and links. Before you ask Wilbur for a missing doc or fact, try to find it yourself first: search the project channel (including threads and what the project's people have posted), Slack search, Confluence, and Jira. Ask only if that turns up nothing, and say what you searched. Then ask him directly. End the digest with a short "Questions for you" list: one line per question, written so he can answer with a word or a link. Don't bury a question inside an item.
+Mark the item "Unsure" and give Wilbur the relevant facts and links. Before you ask Wilbur for a missing doc or fact, try to find it yourself first: search the project channel (including threads and what the project's people have posted), Slack search, Confluence, and Jira. Ask only if that turns up nothing, and say what you searched. Then ask him directly. Put each question in the project message's "Questions for you" list (it comes first; see Format), written so he can answer with a word or a short phrase. Don't bury a question inside an item.
 
 ## Don't repeat yourself
 Don't report an item twice. If it changed, say what changed.
