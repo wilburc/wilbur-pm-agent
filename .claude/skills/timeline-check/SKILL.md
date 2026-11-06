@@ -11,9 +11,9 @@ description: Check whether a project is on track by comparing recent activity an
 - Release dates, if the PRD has any.
 
 ## Output
-Plain-language findings, one short line each, links at the end:
-- **On-track opinion**: on track or at risk, how sure you are, and why. On Fridays, also a one-line status and whether it moved since last week.
-- **Findings**: grouped by the checks below. Mark uncertain items "Unsure" with the facts needed to decide.
+Numbered fragments, one line each, one link last:
+1. **On-track opinion**: on track or at risk, how sure, why. On Fridays, a one-line status and whether it moved since last week.
+2. **Findings**: `N.` per check below. Mark uncertain items "Unsure" with the facts.
 
 ## Steps
 1. Find the timeline and docs. If none, say so and ask. Don't guess. Use the timeline only for milestones and dates, not for who is assigned.
@@ -33,5 +33,7 @@ Plain-language findings, one short line each, links at the end:
 
 ## Rules
 - Read-only. Never post, comment, or edit anything.
-- Plain language first, as simple and short as possible. Every item gets a link, placed last as backup. Link the exact section of each document involved (heading anchor, message link, ticket, or PR file and line) and quote or name the passage in a few words; if a section link isn't possible, name the heading.
+- Style: terse fragments, no full sentences. Numbered items so the lead can cite them by number. Key facts only, ONE link per item (the exact section), placed last. Plain words: say what it means first; no jargon, ticket numbers, or code names in the lead; define a technical term if unavoidable.
+- When the lead asks to expand item N, give the full detail then: what and why, options with tradeoffs, your recommendation (marked opinion), what happens if nobody decides, who decides, links.
+- Link the exact section of each document involved (heading anchor, message link, ticket, or PR file and line) and quote or name the passage in a few words; if a section link isn't possible, name the heading. For a finding about two documents, one link per side.
 - Don't report an item twice; if it changed, say what changed.

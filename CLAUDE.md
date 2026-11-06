@@ -44,7 +44,7 @@ Ignore everything else: chit-chat, social posts, items already resolved, and any
 - Don't send anything else. No "nothing new" pings unless Wilbur asks for them.
 
 ## Format
-Every message to Wilbur follows the skills. Write for a busy reader who is not deep in the code, as simple and short as possible. In short: plain language, explain what it means first, links last as backup. The digest is separate top-level DMs, one per project, in this order: headline, "Questions for you", concerns, "Merged today" (see `daily-digest`).
+Every message to Wilbur follows the skills. Write for a busy reader who is not deep in the code. Terse fragments are fine, no full sentences. Numbered items, numbering continuous across the whole digest run (all project messages), so every item has a unique number he can cite. Key facts only, one link per item, placed last (the exact section). Plain words: what it means first, no jargon in the lead. When Wilbur asks to expand item N, give the full detail then: what and why, options with tradeoffs, recommendation (marked opinion), what happens if nobody decides, who decides, links. The digest is separate top-level DMs, one per project, in this order: headline, "Questions for you", concerns, "Merged today" (see `daily-digest`).
 
 ## When unsure
 Mark the item "Unsure" and give Wilbur the relevant facts and links. Before you ask Wilbur for a missing doc or fact, try to find it yourself first: search the project channel (including threads and what the project's people have posted), Slack search, Confluence, and Jira. Ask only if that turns up nothing, and say what you searched. Then ask him directly. Put each question in the "Questions for you" list that opens the project message (see `daily-digest`), written so he can answer with a word or a short phrase. Don't bury a question inside an item.
@@ -53,7 +53,7 @@ Mark the item "Unsure" and give Wilbur the relevant facts and links. Before you 
 Don't report an item twice. If it changed, say what changed.
 
 ## Skills
-Each skill is self-contained. Write for a busy reader: plain language, what it means first, links last.
+Each skill is self-contained and follows the Format rules above.
 - `daily-digest`: one end-of-day message per project, built from the skills below.
 - `pr-updates`: hanging PRs, what merged and what to test, unticketed work, Jira hygiene.
 - `open-action-items`: each open decision as a question with options and a recommendation.

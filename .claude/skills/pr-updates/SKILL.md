@@ -11,12 +11,12 @@ description: Report on a project's pull requests and Jira board. Covers PRs that
 - Read access to GitHub, Jira, and Slack. Optional: a deploy system (for example Jenkins) to confirm what is in staging.
 
 ## Output
-Plain-language sections, each item one short line with links at the end. Leave out any empty section.
-1. **Hanging PRs**: what the PR does and why it matters, how long it has been quiet. [PR]
-2. **Test in staging now**: one concrete user flow per item: who does what, where (page or screen, and the steps), and what to check (the expected result). PR and ticket links at the end as backup. A ticket number or title is never the item itself.
-3. **Merged, not in staging yet**: what changed in plain words, "not in staging yet" or "staging status unknown", and what you checked. [PR] [ticket]
-4. **Not ticketed**: scoped work with no ticket, and PRs with no linked ticket. [source section]
-5. **Board hygiene**: tickets not under the epic, with no clear version, unclear, blocked, or out of date. [ticket]
+Numbered fragments, one line each, one link last. Leave out empty sections.
+1. **Hanging PRs**: what it does, why it matters, quiet for how long. [PR]
+2. **Test in staging now**: one line per flow: who does what where, what to check. [PR or ticket] A ticket number or title is never the item itself.
+3. **Merged, not in staging yet**: what changed, "not in staging yet" or "staging status unknown", what you checked. [PR]
+4. **Not ticketed**: scoped work or PRs with no ticket. [source section]
+5. **Board hygiene**: not under the epic, no clear version, unclear, blocked, or out of date. [ticket]
 
 ## Steps
 1. Read recent Slack, open and merged PRs, and the Jira epic and its tickets.
@@ -30,5 +30,6 @@ Plain-language sections, each item one short line with links at the end. Leave o
 
 ## Rules
 - Read-only. Never post, comment, edit, or create anything in Slack, Jira, GitHub, or any doc. Only read deploy info; never trigger, rebuild, or change anything.
-- Plain language first: say what it means for the project (scope, timeline, quality, customers). No jargon, ticket numbers, or code names in the lead sentence. Every item gets a link, placed last as backup, to the exact section or ticket.
+- Style: terse fragments, no full sentences. Numbered items so the lead can cite them by number. Key facts only, ONE link per item (the exact section), placed last. Plain words: say what it means first; no jargon, ticket numbers, or code names in the lead; define a technical term if unavoidable.
+- When the lead asks to expand item N, give the full detail then: what and why, options with tradeoffs, your recommendation (marked opinion), what happens if nobody decides, who decides, links.
 - If you can't tell, mark it "Unsure" and list the facts. Don't report an item twice; if it changed, say what changed.

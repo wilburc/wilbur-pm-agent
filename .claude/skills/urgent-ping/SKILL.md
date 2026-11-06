@@ -9,12 +9,11 @@ description: Send an immediate private ping when something is blocking the team.
 - The blocker, the project, and who to message (the lead).
 
 ## Output
-A short DM to the lead, in plain wording with the key details up front:
-- Project name.
-- What is blocked, who or what it blocks, and what it means for the project.
-- Why you think so. If a decision is needed: the options, by when, and who decides.
-- Links to the Slack messages, tickets, or PRs, as backup at the end.
-- If unsure, say "Unsure" and give the facts needed to decide.
+A short DM to the lead: numbered fragments, key details first, one link per item last.
+1. Project.
+2. What is blocked, who or what it blocks, what it means for the project.
+3. Why you think so. If a decision is needed: ask, deadline, who decides.
+4. Links as backup. If unsure, say "Unsure" and give the facts.
 
 ## Steps
 1. Use only when something is blocking the team. If it is not blocking, leave it for the daily digest.
@@ -23,4 +22,5 @@ A short DM to the lead, in plain wording with the key details up front:
 
 ## Rules
 - Never post in the project channel. Read-only everywhere else.
-- Plain language first, links last.
+- Style: terse fragments, no full sentences. Numbered items so the lead can cite them by number. Key facts only, ONE link per item (the exact section), placed last. Plain words: say what it means first; no jargon, ticket numbers, or code names in the lead; define a technical term if unavoidable.
+- When the lead asks to expand item N, give the full detail then: what and why, options with tradeoffs, your recommendation (marked opinion), what happens if nobody decides, who decides, links.
