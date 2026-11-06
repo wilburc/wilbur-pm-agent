@@ -11,12 +11,13 @@ description: Turn every open decision and anything waiting on the lead into a sh
 - Who the lead is (the person the questions are for), so you can tell what is waiting on them.
 
 ## Output
-A "Questions for you" list. One question per item, answerable in a word or a short phrase. Each question has:
-- **What is happening and why it matters**, in plain language.
-- **Options**, each with a one-line tradeoff. Your recommendation if you have one, marked as opinion.
-- **What happens if nobody decides**, and by when (a date or milestone, tied to the timeline if known).
-- **Who decides** (a name, and why them: owner or approver per the doc, ticket, or channel), and **who to chase** if not the lead. If the owner is unknown, mark it "Unsure" and say so.
-- **Link** to the Slack message or doc section where it was raised, at the end.
+A numbered "Questions for you" list, one or two lines per question, answerable in a word or a short phrase:
+`N. <what and why, plain words>. Ask: <the ask>. Rec: <recommendation> (opinion). By: <deadline>. Who: <decider; chase>. [link]`
+- Options only if there is a real choice: one short line.
+- If the owner is unknown, mark it "Unsure" and say so.
+
+## Expand on request
+When the lead asks to expand item N, give the full detail: what is happening and why it matters; options, each with a one-line tradeoff; your recommendation (marked opinion); what happens if nobody decides, and by when; who decides (a name, and why them: owner or approver per the doc, ticket, or channel) and who to chase; links to the Slack message or doc section.
 
 ## Steps
 1. Read recent Slack, the PRD and spec, and Jira. Find every open (undecided) decision, whoever owns it, not only ones waiting on the lead.
@@ -26,5 +27,5 @@ A "Questions for you" list. One question per item, answerable in a word or a sho
 
 ## Rules
 - Read-only. Never post, comment, or message anyone except the lead.
-- Plain language first. No jargon, ticket numbers, or code names in the lead sentence; define a technical term if unavoidable. Every item gets a link, placed last as backup, to the exact section. As simple and short as possible.
+- Style: terse fragments, no full sentences. Numbered items so the lead can cite them by number. Key facts only, ONE link per item (the exact section), placed last. Plain words: say what it means first; no jargon, ticket numbers, or code names in the lead; define a technical term if unavoidable.
 - Don't report an item twice; if it changed, say what changed.

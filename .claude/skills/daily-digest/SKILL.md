@@ -11,11 +11,12 @@ description: Build and send the end-of-day digest of one or more project channel
 
 ## Output
 Separate top-level DMs to the lead, not replies in an existing thread, one message per project. Each message, in this order:
-1. **Headline**: your on-track opinion.
-2. **Questions for you**: first, with the items waiting on the lead in it. Open decisions are questions, not concerns.
-3. **Concerns**: everything else (including decisions made), one line each: `- **<type>**: <what and why>. [link]`. Don't repeat anything already in a question.
-4. **Merged today**: what merged and what to test in staging; leave it out if nothing merged.
-A cross-project item goes in the message of the project it concerns, or a short extra message only if it truly spans projects. Keep each message under Slack's 12,000-character limit; if a project exceeds it, split it into numbered parts. Keep it short.
+1. **Headline**: on-track opinion, one line.
+2. **Questions for you**: first, with items waiting on the lead. Open decisions are questions, not concerns. `N. <what/why>. Ask: <ask>. Rec: <rec> (opinion). By: <date>. Who: <name>. [link]`
+3. **Concerns**: everything else (including decisions made): `N. **<type>**: <fragment>. [link]`. Don't repeat anything already in a question.
+4. **Merged today**: `N.` one line per item; "Test in staging now" vs "Not in staging yet". Leave out if nothing merged.
+Numbering is continuous across the whole digest run, including across project messages, so every item has a unique number.
+A cross-project item goes in the message of the project it concerns, or a short extra message only if it truly spans projects. Keep each message under Slack's 12,000-character limit; if a project exceeds it, split it into numbered parts.
 
 ## Steps
 1. For each project, read what happened since the last digest.
@@ -26,5 +27,6 @@ A cross-project item goes in the message of the project it concerns, or a short 
 
 ## Rules
 - Read-only everywhere. Never post in a project channel or message anyone but the lead.
-- Plain language first: say what it means for scope, timeline, quality, or customers. No jargon, ticket numbers, or code names in the lead sentence. Every item gets a link, placed last as backup, to the exact section. Write for a busy reader who is not deep in the code; as simple and short as possible.
+- Style: terse fragments, no full sentences. Numbered items so the lead can cite them by number. Key facts only, ONE link per item (the exact section), placed last. Plain words: say what it means first; no jargon, ticket numbers, or code names in the lead; define a technical term if unavoidable.
+- When the lead asks to expand item N, give the full detail then: what and why, options with tradeoffs, your recommendation (marked opinion), what happens if nobody decides, who decides, links.
 - Don't report an item twice; if it changed, say what changed. Mark uncertain items "Unsure" with the facts.
