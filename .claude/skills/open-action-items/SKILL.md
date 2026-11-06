@@ -1,6 +1,6 @@
 ---
 name: open-action-items
-description: Turn every open decision and anything waiting on the lead into a short question they can answer in a word or phrase. Each question carries the context, options with tradeoffs, a recommendation, urgency, and who to chase. Use when asked what needs a decision or what is waiting on me.
+description: Turn every open decision and anything waiting on the lead into a short question they can answer in a word or phrase. Each question is one or two numbered lines (what, ask, recommendation, deadline, who) and expands into full detail on request. Use when asked what needs a decision or what is waiting on me.
 ---
 
 # Open action items
