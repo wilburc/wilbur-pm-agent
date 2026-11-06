@@ -6,7 +6,7 @@ description: Build and send the end-of-day digest of one or more project channel
 # Daily digest
 
 ## Input
-- The list of project channels, and for each: PRD, eng spec, Jira epic, and the timeline.
+- The project channels, and for each: PRD, eng spec, designs, Jira epic, and the timeline. A project with no docs gets Jira and ticket health only; don't flag missing docs.
 - Who receives it (the lead) and when (default: weekdays 5:00 pm Eastern).
 
 ## Output
@@ -14,7 +14,7 @@ Separate top-level DMs to the lead, not replies in an existing thread, one messa
 1. **Headline**: on-track opinion, one line.
 2. **Questions for you**: first, with items waiting on the lead. Open decisions are questions, not concerns. `N. <what/why>. Ask: <ask>. Rec: <rec> (opinion). By: <date>. Who: <name>. [link]`
 3. **Concerns**: everything else (including decisions made): `N. **<type>**: <fragment>. [link]`. Don't repeat anything already in a question.
-4. **Merged today**: `N.` one line per item; "Test in staging now" vs "Not in staging yet". Then a short block, when determinable, per version (or the whole project if no versions): `N.` "<version> includes: a, b, c"; `N.` "In staging now (testable): flows x, y"; `N.` "Still to build: flow z" (one link each). Leave out if nothing merged.
+4. **Merged today**: `N.` one line per item, "Test in staging now" (concrete user flows) vs "Not in staging yet". Then, when determinable, per version (or the whole project if no versions): `N.` "<version> includes: a, b, c"; `N.` "In staging now (testable): flows x, y"; `N.` "Still to build: flow z". Leave out if nothing merged.
 Numbering is continuous across the whole digest run, including across project messages, so every item has a unique number.
 A cross-project item goes in the message of the project it concerns, or a short extra message only if it truly spans projects. Keep each message under Slack's 12,000-character limit; if a project exceeds it, split it into numbered parts.
 
@@ -23,10 +23,10 @@ A cross-project item goes in the message of the project it concerns, or a short 
 2. Run `timeline-check`, `pr-updates`, `open-action-items`, and `project-summary` (decisions made) for it. If a skill is not installed, do its job directly.
 3. On Mondays and Fridays, check the lead posted the weekly goals (Monday) or recap (Friday). If not by end of day, flag it. On Fridays, add a one-line status per project.
 4. Drop anything already reported and unchanged. Anything blocking the team should already have gone out as an urgent ping; if you find one now, send an urgent ping first.
-5. Write one message per project in the Output order and send each as its own top-level DM to the lead only. Do this at the scheduled time. If there is nothing to report, send nothing.
+5. Write one message per project in the Output order and send each as its own top-level DM to the lead only, at the scheduled time. If there is nothing to report, send nothing.
 
 ## Rules
 - Read-only everywhere. Never post in a project channel or message anyone but the lead.
-- Style: terse fragments, no full sentences. Numbered items so the lead can cite them by number. Key facts only, ONE link per item (the exact section), placed last. Plain words: say what it means first; no jargon, ticket numbers, or code names in the lead; define a technical term if unavoidable.
-- When the lead asks to expand item N, give the full detail then: what and why, options with tradeoffs, your recommendation (marked opinion), what happens if nobody decides, who decides, links.
+- Style: terse numbered fragments, no full sentences. Key facts only, ONE link per item (the exact section), last. Plain words: say what it means first; no jargon, ticket numbers, or code names in the lead; define a technical term if unavoidable. Check PR and ticket numbers before citing them. Recommendations need solid reasons, never weak or speculative examples.
+- On "expand N" from the lead: give the full detail then: what and why, options with tradeoffs, recommendation (marked opinion), what happens if nobody decides, who decides, links.
 - Don't report an item twice; if it changed, say what changed. Mark uncertain items "Unsure" with the facts.
