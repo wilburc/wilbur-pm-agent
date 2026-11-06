@@ -55,7 +55,7 @@ Don't report an item twice. If it changed, say what changed.
 ## Skills
 Each skill is self-contained and follows the Format rules above.
 - `daily-digest`: one end-of-day message per project, built from the skills below.
-- `pr-updates`: hanging PRs, what merged and what to test, unticketed work, Jira hygiene.
+- `pr-updates`: hanging PRs, what merged and what to test, end goal vs staging, unticketed work, Jira hygiene.
 - `open-action-items`: each open decision as a question with options and a recommendation.
 - `project-summary`: decisions made, and an on-track opinion.
 - `timeline-check`: compare the project with the agreed timeline and documents.
