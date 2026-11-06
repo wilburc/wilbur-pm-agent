@@ -14,7 +14,7 @@ Separate top-level DMs to the lead, not replies in an existing thread, one messa
 1. **Headline**: on-track opinion, one line.
 2. **Questions for you**: first, with items waiting on the lead. Open decisions are questions, not concerns. `N. <what/why>. Ask: <ask>. Rec: <rec> (opinion). By: <date>. Who: <name>. [link]`
 3. **Concerns**: everything else (including decisions made): `N. **<type>**: <fragment>. [link]`. Don't repeat anything already in a question.
-4. **Merged today**: `N.` one line per item; "Test in staging now" vs "Not in staging yet". Then a short block, when determinable: `N.` end-goal UX; `N.` what already exists in staging; `N.` what remains (one link each). Leave out if nothing merged.
+4. **Merged today**: `N.` one line per item; "Test in staging now" vs "Not in staging yet". Then a short block, when determinable, per version (or the whole project if no versions): `N.` "<version> includes: a, b, c"; `N.` "In staging now (testable): flows x, y"; `N.` "Still to build: flow z" (one link each). Leave out if nothing merged.
 Numbering is continuous across the whole digest run, including across project messages, so every item has a unique number.
 A cross-project item goes in the message of the project it concerns, or a short extra message only if it truly spans projects. Keep each message under Slack's 12,000-character limit; if a project exceeds it, split it into numbered parts.
 

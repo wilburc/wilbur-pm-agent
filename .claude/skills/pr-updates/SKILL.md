@@ -14,7 +14,11 @@ description: Report on a project's pull requests and Jira board. Covers PRs that
 Numbered fragments, one line each, one link last. Leave out empty sections.
 1. **Hanging PRs**: what it does, why it matters, quiet for how long. [PR]
 2. **Test in staging now**: one line per flow: who does what where, what to check. [PR or ticket] A ticket number or title is never the item itself.
-3. **End goal vs staging** (when determinable), right after the test flows, three numbered items: end-goal UX in one or two lines [PRD, spec, or design section]; what of it already exists in staging, or "staging status unknown" [PR or deploy]; what remains, as open tickets or PRs and not-started work [ticket]. If there is no end goal to find, one item: "end goal can't be determined" and why.
+3. **End goal vs staging** (when determinable), right after the test flows. Per version (V1, V2, ...; if no versions are defined, the project as a whole), numbered items, one link each:
+   - "<version> includes: a, b, c" [PRD, spec, or design section]
+   - "In staging now (testable): flows x, y" [PR or deploy]
+   - "Still to build: flow z" [ticket]
+   If there is no end goal to find: "end goal can't be determined" and why.
 4. **Merged, not in staging yet**: what changed, "not in staging yet" or "staging status unknown", what you checked. [PR]
 5. **Not ticketed**: scoped work or PRs with no ticket. [source section]
 6. **Board hygiene**: not under the epic, no clear version, unclear, blocked, or out of date. [ticket]
@@ -24,7 +28,7 @@ Numbered fragments, one line each, one link last. Leave out empty sections.
 2. Hanging PRs: a PR that sits open with no comments and no other activity. Judge each PR on its own, not by a fixed number of days. Say how long it has been quiet.
 3. Quality: flag PRs merged with failing or no tests or with unaddressed review comments, bugs reported or regressions discussed, hotfixes, rushed or skipped QA, and open bug tickets on the critical path.
 4. Merged today: list the functionality merged that day, in user-facing terms. Mark an item in staging only when the deploy containing the merge commit is confirmed (the deploy system (for example Jenkins, through its connector), staging deploy info, or release notes, where readable). Otherwise say "not in staging yet" or "staging status unknown" and what you checked. For an item behind a flag, give the flag name and say it must be enabled to test. If nothing merged, leave the section out.
-   End goal vs staging: take the end-goal UX from the PRD, eng spec, or design. For a project without those, use the epic and Jira. If a design link can't be read, say "Figma link not read" and include the link. If there is no source, say plainly "end goal can't be determined" and why; don't guess. "Already in staging" uses the same confirmation rule as above (deploy of the merge commit confirmed, otherwise "staging status unknown"). "Remains" is open tickets and PRs, and anything not started.
+   End goal vs staging: take what each version includes (the end-goal UX) from the PRD, eng spec, or design. For a project without those, use the epic and Jira. If a design link can't be read, say "Figma link not read" and include the link. If there is no source, say plainly "end goal can't be determined" and why; don't guess. "In staging now" uses the same confirmation rule as above (deploy of the merge commit confirmed, otherwise "staging status unknown"). "Still to build" is open tickets and PRs, and anything not started.
 5. Not ticketed: all work must be ticketed. Flag work described in the PRD, eng spec, channel, or an open PR that has no ticket, and PRs with no linked ticket.
 6. Epic and versions: every ticket should be under the project's epic. If the project has no epic, flag that. If the project has versions (V1/V2, phases), each ticket must state its version, in its name or by living under a per-version epic. Flag tickets with no clear version, or a version that disagrees with the PRD or spec. Link the ticket and the PRD section.
 7. Clarity and ownership: flag vague tickets, tickets with no description or acceptance criteria, and tickets with no owner, and say what is unclear. Flag blocked tickets and unassigned tickets on the critical path, and how long each has been stuck.
