@@ -13,7 +13,7 @@ description: Check whether a project is on track by comparing recent activity an
 ## Output
 Numbered fragments, one line each, one link last:
 1. **On-track opinion**: on track or at risk, how sure, why. On Fridays, a one-line status and whether it moved since last week.
-2. **Findings**: `N.` per check below. Mark uncertain items "Unsure" with the facts.
+2. **Findings**: `N.` per check below, each with a named owner where there is one (owner of the ticket, doc, or date; or "no owner"). Report as status with the risk to a date, not as an ask to the lead; see Rules, "Whose call". Mark uncertain items "Unsure" with the facts.
 
 ## Steps
 1. Find the timeline and docs. If none, say so and ask. Don't guess. Use the timeline only for milestones and dates, not for who is assigned.
@@ -26,13 +26,14 @@ Numbered fragments, one line each, one link last:
    - **Divergence**: work or talk that departs from a document, or documents that disagree.
    - **Version alignment**: where versions (V1/V2, phases, releases) are defined (PRD, Slack, Jira fix versions or labels, the timeline), the PRD, eng spec, Jira, and Figma must agree on what is in each version. Flag an item in different versions in different places, in a version in one place and absent in another, or in no version. Figma can be read through its REST API (a worker with shell access can); never say it is unreadable, and ask the lead to check Figma only if the file truly can't be read.
    - **Scope creep**: work or requests beyond what the docs describe.
-   - **Risks**: anything that could threaten the timeline or the plan, such as dependencies, blockers, unanswered questions.
+   - **Risks**: anything that could threaten the timeline or the plan, such as dependencies, blockers, unanswered questions. Name who owns each; it is not the lead's call unless they are tagged, the named approver, or the explicit owner.
    - **Communication**: a channel silent while work is in flight, no stakeholder update before a release or milestone, or a change stakeholders outside the channel need to know.
-4. If you suspect the timeline is off track, write one or two lines on why, with links, plus a little context that helps the lead decide.
+4. If you suspect the timeline is off track, write one or two lines on why, with links, plus a little context that helps the lead understand it, and the named owner.
 5. Weekly goals: each project lead posts goals on Monday and a recap on Friday. If either is missing by end of day, flag it. Only the current week's goals (latest Monday post) count; ignore earlier weeks. With no Monday post, use the previous Friday's "next week" list, flag any unclear items, and still flag the missing post. A good goal can be verified ("finish ticket X", not "make progress on Y"); flag vague goals and say what is unclear.
 
 ## Rules
 - Read-only. Never post, comment, or edit anything.
+- Whose call: ask the lead (a question, "needs you", "waiting on you") only when they are explicitly tagged or asked to make that call, OR are the named spec approver, OR are the explicit owner of that decision. Never frame an item as blocked on the lead because a date is unclear, an owner is missing, a decision belongs to someone else, or a PR needs review. Never list PR reviews or code-owner reviews as waiting on the lead unless they are tagged. If unsure whether it is their call, treat it as not theirs and name who owns it. Everything else is a short status line with a named owner and the risk to a date or to quality, or is left out if it is neither.
 - Style: terse numbered fragments, no full sentences. Key facts only, ONE link per item (the exact section), last. Plain words: say what it means first; no jargon, ticket numbers, or code names in the lead; define a technical term if unavoidable. Check PR and ticket numbers before citing them. Recommendations need solid reasons, never weak or speculative examples.
 - On "expand N" from the lead: give the full detail then: what and why, options with tradeoffs, recommendation (marked opinion), what happens if nobody decides, who decides, links.
 - Link the exact section of each document involved (heading anchor, message link, ticket, or PR file and line) and quote or name the passage in a few words; if a section link isn't possible, name the heading. For two documents, one link per side.
